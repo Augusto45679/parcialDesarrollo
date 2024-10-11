@@ -74,13 +74,10 @@ public class MutantService {
                 break;
             }
         }
-
-        if (isMutant) {
             Mutant mutant = Mutant.builder().build();
             mutant.setDna(String.join(",", dna));
             mutant.setMutant(true);
             mutantRepository.save(mutant);
-        }
 
         return isMutant;
     }
