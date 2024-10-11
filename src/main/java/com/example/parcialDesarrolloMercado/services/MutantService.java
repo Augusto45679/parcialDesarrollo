@@ -6,6 +6,8 @@ import com.example.parcialDesarrolloMercado.repositories.MutantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Random;
+
 @Service
 public class MutantService {
 
@@ -74,11 +76,32 @@ public class MutantService {
                 break;
             }
         }
-            Mutant mutant = Mutant.builder().build();
-            mutant.setDna(String.join(",", dna));
-            mutant.setMutant(true);
-            mutantRepository.save(mutant);
-
+        Mutant mutant = Mutant.builder().build();
+        mutant.setDna(String.join(",", dna));
+        mutant.setMutant(isMutant);
+        mutantRepository.save(mutant);
         return isMutant;
+    }
+
+    //Bonus del servicio para generar cadenas random
+    private static final char[] ADN_LETTERS = {'A', 'T', 'C', 'G'};
+    private Random random = new Random();
+
+    public String[] generateRandomDna(int size) {
+        String[] dna = new String[size];
+
+        for (int i = 0; i < size; i++) {
+            dna[i] = generateRandomDnaRow(size);
+        }
+
+        return dna;
+    }
+
+    private String generateRandomDnaRow(int size) {
+        StringBuilder row = new StringBuilder(size);
+        for (int i = 0; i < size; i++) {
+            row.append(ADN_LETTERS[random.nextInt(ADN_LETTERS.length)]);
+        }
+        return row.toString();
     }
 }
