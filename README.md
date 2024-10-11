@@ -2,11 +2,11 @@
 
 El fin de esta API es resolver el siguiente problema que se nos plantea: 
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 Y tenemos distintos niveles para cumplir con los requerimientos que necesita la API
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
 1. En este caso estamos utilizando Java con Spring 
 
@@ -16,25 +16,25 @@ Y tenemos distintos niveles para cumplir con los requerimientos que necesita la 
 
 4.
 ## Prueba de la API swagger en local Host
-![img.png](img.png)
+![img.png](images/img.png)
 
 ### Prueba del servicio "/mutant"
 
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 
 ### Prueba del servicio "/stats"
 
-![img_8.png](img_8.png)
+![img_8.png](images/img_8.png)
 
-![img_9.png](img_9.png)
+![img_9.png](images/img_9.png)
 
 ### Prueba del servicio "/generateDNA"
 
-![img_10.png](img_10.png)
+![img_10.png](images/img_10.png)
 
 ## Base de datos H2 en memoria 
 
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
