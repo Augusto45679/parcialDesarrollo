@@ -28,7 +28,7 @@ class ParcialDesarrolloMercadoApplicationTests {
 
 	@Test
 	public void testDiagonal(){
-		String[] dna = {"AGAATG", "TACAGT", "GCAGCC", "TTGATG", "GTAGTC", "AGTCAA"};
+		String[] dna = {"AGACTG", "TACAGT", "GCAGCC", "TTGATG", "GTAGTC", "AGTCAA"};
 		assertTrue(mutantService.isMutant(dna));
 	}
 	@Test

@@ -23,9 +23,9 @@ public class MutantController {
         }
     }
 
-    @GetMapping(path = "/generateDNA")
-    public String[] generateDna(@RequestParam int size){
-        return mutantService.generateRandomDna(size);
-    }
+   //  @GetMapping(path = "/generateDNA")
+    // public String[] generateDna(@RequestParam int size){
+    // return mutantService.generateRandomDna(size);
+    // }
 
 }

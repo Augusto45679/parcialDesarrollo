@@ -35,6 +35,10 @@ Y tenemos distintos niveles para cumplir con los requerimientos que necesita la 
 
 ![img_10.png](images/img_10.png)
 
-## Base de datos H2 en memoria 
+## Base de datos H2 en memoria
 
 ![img_7.png](images/img_7.png)
+
+## Covertura del código
+
+![img.png](img.png)
