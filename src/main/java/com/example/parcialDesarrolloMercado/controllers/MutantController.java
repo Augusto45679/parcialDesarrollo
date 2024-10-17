@@ -1,5 +1,6 @@
 package com.example.parcialDesarrolloMercado.controllers;
 
+import com.example.parcialDesarrolloMercado.dto.MutantRequest;
 import com.example.parcialDesarrolloMercado.services.MutantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,8 +15,8 @@ public class MutantController {
     private MutantService mutantService;
 
     @PostMapping(path = "/mutant")
-    public ResponseEntity<?> checkMutant(@RequestBody String[] dna){
-        boolean isMutant = mutantService.isMutant(dna);
+    public ResponseEntity<?> checkMutant(@RequestBody MutantRequest mutantRequest) {
+        boolean isMutant = mutantService.isMutant(mutantRequest.getDna());
         if(isMutant){
             return ResponseEntity.ok().body("True");
         } else {
