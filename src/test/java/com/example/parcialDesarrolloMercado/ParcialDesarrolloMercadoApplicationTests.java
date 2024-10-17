@@ -77,4 +77,6 @@ class ParcialDesarrolloMercadoApplicationTests {
 		String[] dna = {"TTTTTTTTT","TTTTTTTTT", "TTTTTTTTT", "TTTTTTTTT", "CCGACCAGT","GGCACTCCA", "AGGACACTA", "CAAAGGCAT", "GCAGTCCCC"};
 		assertTrue(mutantService.isMutant(dna));
 	}
+
+
 }
