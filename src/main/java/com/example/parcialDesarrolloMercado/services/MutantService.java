@@ -6,6 +6,7 @@ import com.example.parcialDesarrolloMercado.repositories.MutantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
 import java.util.Random;
 
 @Service
@@ -76,10 +77,16 @@ public class MutantService {
                 break;
             }
         }
-        Mutant mutant = Mutant.builder().build();
-        mutant.setDna(String.join(",", dna));
-        mutant.setMutant(isMutant);
-        mutantRepository.save(mutant);
+        String dnaSequence = String.join(",",dna);
+        Optional<Mutant> existingMutant = mutantRepository.findByDna(dnaSequence);
+        
+        if(existingMutant.isPresent()){
+            Mutant mutant = Mutant.builder().build();
+            mutant.setDna(dnaSequence);
+            mutant.setMutant(isMutant);
+            mutantRepository.save(mutant);
+        }
+
         return isMutant;
     }
 

@@ -17,7 +17,7 @@ public class Mutant {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "dna_sequence", unique = true,length = 1000)
+    @Column(name = "dna_sequence",length = 1000)
     private String dna;
 
     @Column
