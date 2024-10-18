@@ -79,8 +79,8 @@ public class MutantService {
         }
         String dnaSequence = String.join(",",dna);
         Optional<Mutant> existingMutant = mutantRepository.findByDna(dnaSequence);
-        
-        if(existingMutant.isPresent()){
+
+        if(existingMutant.isEmpty()){
             Mutant mutant = Mutant.builder().build();
             mutant.setDna(dnaSequence);
             mutant.setMutant(isMutant);
