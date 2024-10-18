@@ -23,10 +23,4 @@ public class MutantController {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }
     }
-
-   //  @GetMapping(path = "/generateDNA")
-    // public String[] generateDna(@RequestParam int size){
-    // return mutantService.generateRandomDna(size);
-    // }
-
 }

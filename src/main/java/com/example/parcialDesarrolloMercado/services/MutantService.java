@@ -97,25 +97,4 @@ public class MutantService {
         return isMutant;
     }
 
-    //Bonus del servicio para generar cadenas random
-    // private static final char[] ADN_LETTERS = {'A', 'T', 'C', 'G'};
-    // private Random random = new Random();
-
-    // public String[] generateRandomDna(int size) {
-    //  String[] dna = new String[size];
-
-    // for (int i = 0; i < size; i++) {
-    //    dna[i] = generateRandomDnaRow(size);
-    // }
-
-    //  return dna;
-    //   }
-
-    // private String generateRandomDnaRow(int size) {
-    //   StringBuilder row = new StringBuilder(size);
-    //   for (int i = 0; i < size; i++) {
-    //      row.append(ADN_LETTERS[random.nextInt(ADN_LETTERS.length)]);
-    //   }
-//   return row.toString();
-    // }
 }
