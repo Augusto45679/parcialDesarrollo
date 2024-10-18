@@ -6,8 +6,10 @@ import com.example.parcialDesarrolloMercado.repositories.MutantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.Optional;
 import java.util.Random;
+import java.util.Set;
 
 @Service
 public class MutantService {
@@ -15,6 +17,7 @@ public class MutantService {
     @Autowired
     private MutantRepository mutantRepository;
 
+    private Set<String> processedDnaSequences = new HashSet<>();
 
     public char[][] makeMatrix(String[] dna){
         int n = dna.length;
@@ -78,13 +81,17 @@ public class MutantService {
             }
         }
         String dnaSequence = String.join(",",dna);
-        Optional<Mutant> existingMutant = mutantRepository.findByDna(dnaSequence);
+        if (!processedDnaSequences.contains(dnaSequence)) {
+            Optional<Mutant> existingMutant = mutantRepository.findByDna(dnaSequence);
 
-        if(existingMutant.isEmpty()){
-            Mutant mutant = Mutant.builder().build();
-            mutant.setDna(dnaSequence);
-            mutant.setMutant(isMutant);
-            mutantRepository.save(mutant);
+            if (existingMutant.isEmpty()) {
+                Mutant mutant = Mutant.builder().build();
+                mutant.setDna(dnaSequence);
+                mutant.setMutant(isMutant);
+                mutantRepository.save(mutant);
+            }
+
+            processedDnaSequences.add(dnaSequence);
         }
 
         return isMutant;
