@@ -14,7 +14,9 @@ Y tenemos distintos niveles para cumplir con los requerimientos que necesita la 
 
 3. El proyecto cuenta con test unitarios para el correcto funcionamiento y validacion de las secuencias de ADN
 
-4.
+# Mapa del repositorio 
+![img_1.png](images/mapStructure.png)
+
 ## Prueba de la API swagger en local Host
 ![img.png](images/img.png)
 
@@ -41,4 +43,4 @@ Y tenemos distintos niveles para cumplir con los requerimientos que necesita la 
 
 ## Covertura del código
 
-![img.png](img.png)
+![img.png](images/coverage.png)
