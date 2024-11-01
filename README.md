@@ -26,28 +26,22 @@ Y tenemos distintos niveles para cumplir con los requerimientos que necesita la 
 ![img.png](images/sequenceDiagramMutant.png)
 
 ## Prueba de la API swagger en local Host
-![img.png](images/img.png)
+
 
 ### Prueba del servicio "/mutant"
 
-![img_5.png](images/img_5.png)
-
-![img_6.png](images/img_6.png)
 
 
 ### Prueba del servicio "/stats"
 
-![img_8.png](images/img_8.png)
 
-![img_9.png](images/img_9.png)
 
 ### Prueba del servicio "/generateDNA"
 
-![img_10.png](images/img_10.png)
 
 ## Base de datos H2 en memoria
 
-![img_7.png](images/img_7.png)
+
 
 ## Covertura del código
 
