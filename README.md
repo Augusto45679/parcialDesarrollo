@@ -17,6 +17,14 @@ Y tenemos distintos niveles para cumplir con los requerimientos que necesita la 
 # Mapa del repositorio 
 ![img_1.png](images/mapStructure.png)
 
+### Diagrama de secuencia para la operacion GET "/stats"
+
+![img.png](images/sequenceDiagramStats.png)
+
+### Diagrama de secuencia para la operacion POST "/mutant"
+
+![img.png](images/sequenceDiagramMutant.png)
+
 ## Prueba de la API swagger en local Host
 ![img.png](images/img.png)
 
