@@ -51,8 +51,6 @@ Y tenemos distintos niveles para cumplir con los requerimientos que necesita la 
 #### Prueba del GET
 ![img.png](images/getResponse.png)
 
-### Prueba del servicio "/generateDNA"
-
 
 ## Base de datos H2 en memoria
 
