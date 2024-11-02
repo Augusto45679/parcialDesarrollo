@@ -58,6 +58,6 @@ Y tenemos distintos niveles para cumplir con los requerimientos que necesita la 
 
 ![img.png](images/dataBase.png)
 
-## Covertura del código
+## Code coverage
 
 ![img.png](images/codeCoverage.png)
