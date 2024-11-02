@@ -1,5 +1,14 @@
 # Parcial Desarrollo de Software 
 
+Para poder utilizar está API 
+
+1. Clona el repositorio.
+2. Asegúrate de tener Java y Gradle instalados.
+3. Ejecuta la aplicación usando el comando ./gradlew bootRun o desde tu IDE.
+
+link de render: https://parcialdesarrollo-ztk6.onrender.com
+
+
 El fin de esta API es resolver el siguiente problema que se nos plantea: 
 
 ![img_1.png](images/img_1.png)
